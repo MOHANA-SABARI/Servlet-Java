@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	table{
+		margin:20%;
+		color: blue;
+		font-family: arial;
+		justify-content : center;
+	}
+	table td{
+		color:red;
+		height:10px;
+		width:180px;
+		padding:10px;
+	}
+	label{
+		color:blue;
+		font-size:40px;
+		justify-content:center;
+		margin-left:13%;
+	}
+</style>
+</head>
+<body>
+	<form action="myServlet" method="post" onsubmit="validateForm()">
+	<table>
+		<tr>
+			<td><label>Calculator</label><td>
+			</tr>
+			<td>Enter the number a:</td>
+			<td><input type="number" name="num1" required/></td>
+			</tr>
+			<tr>
+			<td>Enter the number b:</td>
+			<td><input type="number" name="num2" required/></td>
+			</tr>
+			<tr>
+			<td>Enter the operation:</td>
+			<td>
+			<select name="task" >
+			<option value="add">Add</option>
+			<option value="sub">Subtract</option>
+			<option value="mul">Multiply</option>
+			<option value="div">Division</option>
+			</td>
+			</tr>
+			<tr>
+			<td><input type="submit" id="btn" name="log"></td>
+			
+	</table>
+	</form>
+
+</body>
+</html>
